@@ -3,40 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Fan</title>
+    <title>晚安咪咪</title>
     <style>
         body {
-            margin: 0;
+            background-color: #1a1a2e; /* 深藍色背景，適合晚安氛圍 */
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
-            background-color: #f0f2f5;
-            font-family: 'Arial', sans-serif;
-        }
-        .card {
-            background: white;
-            padding: 2rem 3rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-            font-size: 2.5rem;
             margin: 0;
+            font-family: "Microsoft JhengHei", sans-serif;
+            color: #ffde7d; /* 溫柔的月光黃 */
         }
-        span {
-            color: #007bff;
-            font-weight: bold;
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: breathe 3s ease-in-out infinite;
         }
-    </style>
-</head>
-<body>
 
-    <div class="card">
-        <h1>HELLO, MY NAME IS <span>FAN</span></h1>
-    </div>
+        /* 呼吸燈動畫，讓文字更溫柔 */
+        @keyframes breathe {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
 
-</body>
-</html>
+        /* 像素玫瑰花束容器 */
+        .pixel-art {
+            position: relative;
+            width: 120px;
+            height: 150px;
+        }
+
+        /* 使用 CSS Box-shadow 繪製像素 */
+        .bouquet {
+            width: 10px;
+            height: 10px;
+            background: transparent;
+            /* 坐標設計：x y color */
+            box-shadow: 
+                /* 玫瑰花朵 1 */
+                40px 10px #ff4d6d, 50px 10px #ff4d6d, 30px 20px #ff4d6d, 40px 20px #ff4d6d, 50px 20px #ff4d6d, 60px 20px #ff4d6d, 40px 30px #ff4d6d, 50px 30px #ff4d6d,
+                /* 玫瑰花朵 2 */
+                70px 30px #ff758f, 80px 30px #ff758f, 60px 40px #ff758f, 70px 40px #ff758f, 80px 40px #ff758f, 90px 40px #ff758f, 70px 50px #ff758f, 80px 50px #ff758f,
+                /* 玫瑰花朵 3 */
+                10px 30px #c9184a, 20px 30px #c9184a, 0px 40px #c9184a, 10px 40px #c9184a, 20px 40px #c9184a, 30px 40px #c9184a, 10px 50px #c9184a, 20px 50px #c9184a,
+                /* 綠葉與花
