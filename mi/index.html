@@ -1,1 +1,86 @@
 
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晚安咪咪</title>
+    <style>
+        body {
+            background-color: #1a1a2e; /* 深藍色背景，適合晚安氛圍 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Microsoft JhengHei", sans-serif;
+            color: #ffde7d; /* 溫柔的月光黃 */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: breathe 3s ease-in-out infinite;
+        }
+
+        /* 呼吸燈動畫，讓文字更溫柔 */
+        @keyframes breathe {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        /* 像素玫瑰花束容器 */
+        .pixel-art {
+            position: relative;
+            width: 120px;
+            height: 150px;
+        }
+
+        /* 使用 CSS Box-shadow 繪製像素 */
+        .bouquet {
+            width: 10px;
+            height: 10px;
+            background: transparent;
+            /* 坐標設計：x y color */
+            box-shadow: 
+                /* 玫瑰花朵 1 */
+                40px 10px #ff4d6d, 50px 10px #ff4d6d, 30px 20px #ff4d6d, 40px 20px #ff4d6d, 50px 20px #ff4d6d, 60px 20px #ff4d6d, 40px 30px #ff4d6d, 50px 30px #ff4d6d,
+                /* 玫瑰花朵 2 */
+                70px 30px #ff758f, 80px 30px #ff758f, 60px 40px #ff758f, 70px 40px #ff758f, 80px 40px #ff758f, 90px 40px #ff758f, 70px 50px #ff758f, 80px 50px #ff758f,
+                /* 玫瑰花朵 3 */
+                10px 30px #c9184a, 20px 30px #c9184a, 0px 40px #c9184a, 10px 40px #c9184a, 20px 40px #c9184a, 30px 40px #c9184a, 10px 50px #c9184a, 20px 50px #c9184a,
+                /* 綠葉與花莖 */
+                45px 40px #2d6a4f, 45px 50px #2d6a4f, 45px 60px #2d6a4f, 45px 70px #2d6a4f, 45px 80px #2d6a4f, 
+                35px 50px #40916c, 55px 50px #40916c,
+                /* 束帶/包裝 */
+                30px 90px #ffb3c1, 40px 90px #ffb3c1, 50px 90px #ffb3c1, 60px 90px #ffb3c1,
+                45px 100px #ff85a1, 45px 110px #ff85a1;
+        }
+
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: radial-gradient(white 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+    
+    <h1>晚安咪咪，愛妳喔</h1>
+
+    <div class="pixel-art">
+        <div class="bouquet"></div>
+    </div>
+
+</body>
+</html>
