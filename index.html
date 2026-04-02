@@ -129,13 +129,13 @@
 
     .hero-sub {
       margin-top: 16px;
-      color: var(--muted);
+      color: var(--text);
       font-size: 0.95rem;
       letter-spacing: 0.03em;
     }
 
     .hero-sub strong {
-      color: var(--accent2);
+      color: var(--text);
       font-weight: 400;
     }
 
@@ -255,29 +255,18 @@
 
     /* ── Skills ── */
     .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
 
     .skill-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 16px 20px;
-      font-size: 0.9rem;
-      transition: border-color 0.2s, transform 0.2s;
+      font-size: 0.92rem;
+      color: var(--text);
+      padding: 4px 0;
     }
 
-    .skill-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .skill-icon {
-      font-size: 1.3rem;
-      margin-bottom: 8px;
-    }
+    .skill-icon { display: none; }
 
     /* ── Awards ── */
     .award-list {
@@ -334,7 +323,7 @@
 
     .cert-score {
       font-family: 'DM Mono', monospace;
-      font-size: 1.4rem;
+      font-size: 0.95rem;
       font-weight: 300;
       color: var(--accent);
       margin-left: auto;
@@ -406,7 +395,7 @@
 
       .avatar, .avatar-frame { width: 120px; height: 120px; }
 
-      .skills-grid { grid-template-columns: 1fr 1fr; }
+      .skills-grid { flex-direction: column; }
     }
   </style>
 </head>
@@ -418,18 +407,20 @@
     <header class="hero" itemscope itemtype="https://schema.org/Person">
       <div>
         <h1 class="hero-name" itemprop="name">
-          <span itemprop="alternateName">fanyi38</span>
+          <span itemprop="alternateName" style="display:none;">fanyi38</span>
           樊翊頡
         </h1>
 
         <p class="hero-sub" itemprop="description">
-          <strong itemprop="affiliation">逢甲大學 通訊工程學士</strong>（2026）・班排名 7/63（11%）<br>
+          <strong itemprop="affiliation">逢甲大學 通訊工程學士</strong>（2026）<br>
           <strong>中正大學 通訊網路組碩士</strong>（就讀中）
         </p>
 
         <div class="hero-contact">
           <a href="tel:0984227859" itemprop="telephone">📞 0984-227-859</a>
           <a href="mailto:alvin1488vp@gmail.com" itemprop="email">✉ alvin1488vp@gmail.com</a>
+          <a href="https://www.linkedin.com/in/樊翊頡fanyi38" target="_blank" rel="noopener" itemprop="sameAs">🔗 LinkedIn</a>
+          <a href="https://github.com/Fanyi0308" target="_blank" rel="noopener" itemprop="sameAs">🐙 GitHub</a>
         </div>
       </div>
 
@@ -464,7 +455,7 @@
             <div>
               <div class="edu-school">逢甲大學</div>
               <div class="edu-dept">通訊工程學系 學士（2026 畢業）</div>
-              <span class="edu-badge">班排名 7 / 63（11%）</span>
+              <div class="edu-dept">班排名 7 / 63（11%）・GPA 3.9 / 4.3</div>
             </div>
           </div>
           <div class="edu-item">
@@ -482,19 +473,23 @@
         <div class="section-label">Skills 擅長項目</div>
         <div class="skills-grid">
           <div class="skill-card">
-            <div class="skill-icon"></div>
+            <div class="skill-icon">🤖</div>
             YOLO 影像辨識
           </div>
           <div class="skill-card">
-            <div class="skill-icon"></div>
+            <div class="skill-icon">📡</div>
             5G 行動通訊網路應用
           </div>
           <div class="skill-card">
-            <div class="skill-icon"></div>
+            <div class="skill-icon">💻</div>
+            邊緣運算
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🏸</div>
             羽球
           </div>
           <div class="skill-card">
-            <div class="skill-icon"></div>
+            <div class="skill-icon">📷</div>
             平面攝影
           </div>
         </div>
@@ -569,9 +564,4 @@
   <footer>
     <div class="container">
       <span>樊翊頡</span> · fanyi38 · dormfanyi38 ·
-      <a href="https://gitpage.dormfanyi38.com/" style="color:var(--muted); text-decoration:none;">gitpage.dormfanyi38.com</a>
-    </div>
-  </footer>
-
-</body>
-</html>
+      <a href="https://gitpa
