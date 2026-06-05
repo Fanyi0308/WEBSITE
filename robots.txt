@@ -1,0 +1,26 @@
+# robots.txt for https://gitpage.dormfanyi38.com/
+# SEO Optimization for Personal Portfolio
+
+User-agent: *
+Allow: /
+Allow: /mi/
+Disallow: /test.txt
+Disallow: /test2.txt
+Disallow: /*.txt$
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://gitpage.dormfanyi38.com/sitemap.xml
+
+# Cache rules
+Cache-Control: max-age=604800, public

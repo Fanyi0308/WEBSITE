@@ -1,0 +1,27 @@
+{
+  "name": "樊翊頡個人履歷 - Alvin Fan Portfolio",
+  "short_name": "Alvin Fan",
+  "description": "樊翊頡（Alvin Fan）個人履歷。中正大學通訊網路組碩士生、逢甲大學通訊工程學士（GPA 3.9/4.3，班排名前11%）。擅長 YOLO 影像辨識、5G 行動通訊、邊緣運算。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#0f0f0f",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://gitpage.dormfanyi38.com/profile.jpg",
+      "sizes": "180x180",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "education"],
+  "screenshots": [
+    {
+      "src": "https://gitpage.dormfanyi38.com/profile.jpg",
+      "sizes": "540x720",
+      "type": "image/jpeg"
+    }
+  ]
+}
